@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    
+    <!-- GOOGLE RALEWAY FONT FAMILY -->
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- LOCAL FILES INCLUSION -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 </head>
 <body>
     <header> 
@@ -18,7 +26,42 @@
         </nav>
     </header>
     <main>
-        <!-- MAIN Code here -->
+        <section class="filter-form">
+            <div class="filter-form__heading">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <span>En plein centre-ville ou en pleine nature</span>
+            </div>
+            <div class="filter-form__search">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher">
+            </div>
+            <div class="filter-form__options">
+                <h2>Filtres</h2>
+                <ul>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                        Economique
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-person"></i>
+                        Familial
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-heart"></i>
+                        Romantique
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-fire"></i>
+                        Nos pépites
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-form__info">
+                <img src="assets/local-icons/cirle-info.svg" alt="Infobar">
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- FOOTER Code here -->
