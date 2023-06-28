@@ -62,7 +62,6 @@ section.filter-form {
     justify-content: space-between;
     gap: 15px;
     padding: 0 55px;
-    
 }
 
 div.filter-form__heading {
@@ -110,7 +109,9 @@ div.filter-form__search {
     border: #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
-
+.filter-form__search button {
+    display: none;
+}
 div.filter-form__options {
     width: fit-content;
     display: flex;
@@ -172,6 +173,11 @@ div.filter-form__info {
 
 /* HEADER CODE BASE  ON MOBILE SCREEN */
 @media  screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        margin: 0px;
+    }
+
     nav {
         width: 100%;
         display: flex;
@@ -184,11 +190,13 @@ div.filter-form__info {
     }
 
     nav ul {
-        padding: 0;
+        padding: 0px;
+        margin-bottom: unset;
     }
 
     nav ul li {
         width: 50%;
+        padding: 20px;
         display: flex;
         justify-content: center;
     }
@@ -196,5 +204,67 @@ div.filter-form__info {
     nav ul li:hover {
         border-top: none;
         border-bottom: #0065FC solid 1.5px;
+    }
+
+    /* FILTER FORM CODE BASE  ON MOBILE SCREEN */
+    section.filter-form {
+        width: fit-content;
+        padding: 15px;
+        margin: 0;
+        gap: 10px;
+    }
+
+    div.filter-form__heading {
+        width: inherit;
+    }
+
+    .filter-form__heading h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    div.filter-form__search {
+        width: 100%;
+    }
+
+    .filter-form__search input[type="text"] {
+        width: inherit;
+    }
+
+    .filter-form__search input[type="submit"] {
+        display: none;
+    }
+
+    .filter-form__search button {
+        display: flex;
+        color: #FFF;
+        cursor: pointer;
+        background: #0065FC;
+        border: #0065FC;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    .filter-form__search button i {
+        border-radius: 0;
+        background: none;
+        border: none;
+        color: #FFF;
+    }
+
+    div.filter-form__options {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .filter-form__options h2 {
+        margin: 0;
+    }
+
+    .filter-form__options ul {
+        padding: 0;
+    }
+
+    .filter-form__options ul li {
+        width: 32%;
     }
 }
