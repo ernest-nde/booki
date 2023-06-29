@@ -398,6 +398,7 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
     flex-direction: column;
     gap: 10px;
     padding: 0;
+    font-weight: 550;
 }
 
 /* HEADER CODE BASE  ON MOBILE SCREEN */
