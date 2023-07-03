@@ -9,7 +9,8 @@ a {
     text-decoration: none;
 }
 
-body {
+html, body {
+    width: 100%;
     max-width: 1440px;
     min-width: 320px;
     padding: 0;
@@ -365,9 +366,9 @@ div.cards-activites > .card-act img {
 }
 
 div.card-act-body h5 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     font-weight: 900;
 }
 
@@ -402,7 +403,49 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
 }
 
 /* HEADER CODE BASE  ON MOBILE SCREEN */
-@media  screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    section.filter-form {
+        padding: 0 35px;
+    }
+    
+    .filter-form__options ul {
+        flex-wrap: nowrap;
+        font-size: medium;
+    }
+
+    .filter-form__options ul li {
+        padding: 5px 18px;
+    }
+
+    section#hebergements {
+        flex-direction: column;
+    }
+
+    div.hebergments-marseille {
+        width: 92%;
+        margin: auto;
+    }
+
+    div.hebergements-populaires {
+        width: 92%;
+        padding: 20px 25px;
+    }
+
+    div.cards-populaires {
+        flex-direction: row;
+    }
+
+    section#activites {
+        width: 92%;
+    }
+
+    
+    header, main, footer {
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 767px) {
     body{
         width: 100%;
         margin: 0px;
@@ -438,7 +481,7 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
 
     /* FILTER FORM CODE BASE  ON MOBILE SCREEN */
     section.filter-form {
-        width: fit-content;
+        width: 95%;
         padding: 15px;
         margin: 0;
         gap: 10px;
@@ -454,11 +497,12 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
     }
 
     div.filter-form__search {
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
 
     .filter-form__search input[type="text"] {
-        width: inherit;
+        width: 75%;
     }
 
     .filter-form__search input[type="submit"] {
@@ -496,5 +540,104 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
 
     .filter-form__options ul li {
         width: 32%;
+    }
+
+    main {
+        width: 100%;
+    }
+    section#hebergements {
+        width: 98%;
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+
+    div.hebergements-populaires {
+        width: 97%;
+        border-radius: 0%;
+        padding: 25px;
+    }
+
+    div.hebergments-marseille {
+        width: 97%;
+        border-radius: 0%;
+        background: #FFFFFF;
+    }
+
+    div.hebergements-populaires h2, div.hebergments-marseille h2 {
+        padding-left: 10px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    div.hebergments-marseille p {
+        font-size: 22px;
+        font-weight: bolder;
+        margin-left: 30px;
+    }
+
+    div.cards-marseille {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.card {
+        width: inherit;
+    }
+
+    div.card img {
+        height: 130px;
+    }
+
+    /* SECTION ACTIVES */
+    section#activites {
+        width: 98%;
+        margin: 18px;
+    }
+    div.cards-activites {
+        width: 97%;
+        flex-direction: column;
+    }
+
+    div.card-act {
+        width: 100%;
+        height: 23%;
+    }
+
+    div.cards-activites > .card-act img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+    }
+    div.footer {
+        width: 98%;
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    div.a-propos, div.nos-hebergements, div.assistance {
+        margin-right: 5em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .filter-form__options ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section#activites {
+        margin: 12px;
+    }
+
+    div.footer {
+        width: 100%;
     }
 }
