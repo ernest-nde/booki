@@ -553,13 +553,17 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
 
 
     div.hebergements-populaires {
-        width: 97%;
+        width: 96%;
         border-radius: 0%;
         padding: 25px;
     }
 
+    div.card-pop {
+        width: 95%;
+    }
+    
     div.hebergments-marseille {
-        width: 97%;
+        width: 95%;
         border-radius: 0%;
         background: #FFFFFF;
     }
@@ -583,7 +587,7 @@ div.a-propos ul, div.nos-hebergements ul, div.assistance ul {
     }
 
     div.card {
-        width: inherit;
+        width: 100%;
     }
 
     div.card img {
